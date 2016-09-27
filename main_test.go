@@ -38,3 +38,14 @@ func Test_SumDigits_Should_SumDigits_When_11(t *testing.T) {
 	// Assert
 	assert.Equal(t, 2, result)
 }
+
+func Test_SumDigits_Should_SumDigits_When_123456789123456789(t *testing.T) {
+	// Arrange
+	testData := 123456789123456789
+
+	// Act
+	result := SumDigits(testData)
+
+	// Assert
+	assert.Equal(t, 90, result)
+}

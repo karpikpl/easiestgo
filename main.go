@@ -4,8 +4,6 @@ import (
 	"easiest/io"
 	"fmt"
 	"os"
-	"strconv"
-	"strings"
 )
 
 func main() {
@@ -24,24 +22,18 @@ func Solve(n int) {
 		sumP := SumDigits(p)
 
 		if sum == sumP {
-			fmt.Println(p)
+			fmt.Println(i)
 			return
 		}
 	}
 }
 
 func SumDigits(n int) int {
-	nString := strconv.Itoa(n)
-	digits := strings.SplitN(nString, "", -1)
-
 	sum := 0
-	for _, digit := range digits {
-		i, err := strconv.Atoi(digit)
 
-		if err != nil {
-			panic(nil)
-		}
-		sum += i
+	for n > 0 {
+		sum += n - ((int)(n/10) * 10)
+		n /= 10
 	}
 
 	return sum
