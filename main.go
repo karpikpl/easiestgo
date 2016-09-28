@@ -11,15 +11,11 @@ func main() {
 }
 
 func Solve(n int) {
-	if n == 0 {
-		return
-	}
-
 	sum := SumDigits(n)
+	var sumP int
 
 	for i := 11; ; i++ {
-		p := i * n
-		sumP := SumDigits(p)
+		sumP = SumDigits(i * n)
 
 		if sum == sumP {
 			fmt.Println(i)
