@@ -1,8 +1,8 @@
 package main
 
 import (
-	"easiest/io"
 	"fmt"
+	"github.com/karpikpl/easiestgo/pkg/io"
 	"os"
 )
 

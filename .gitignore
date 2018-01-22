@@ -1,1 +1,4 @@
 *.exe
+bin/
+coverageReport.out
+vendor/
