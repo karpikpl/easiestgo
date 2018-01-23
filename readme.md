@@ -1,4 +1,4 @@
-# About
+# About ![build](https://travis-ci.org/karpikpl/easiestgo.svg?branch=master) [![Go Report Card](https://goreportcard.com/badge/github.com/karpikpl/easiestgo)](https://goreportcard.com/report/github.com/karpikpl/easiestgo)
 task from https://open.kattis.com/problems/easiest
 
 ## Input
